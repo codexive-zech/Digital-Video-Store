@@ -30,7 +30,7 @@ const ItemListing = ({ listing, title, link }) => {
             </Link>
           </div>
           <div className=" grid gap-5 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 ">
-            {data.map((item) => {
+            {data?.slice(0, 8).map((item) => {
               return (
                 <Link to={`/${item.id}`} key={item.id} className="relative">
                   <div className="relative w-full h-[300px]">
