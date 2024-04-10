@@ -4,7 +4,7 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 const screenWidth = window.innerWidth;
 
-const SLIDE_INTERVAL = Math.floor(Math.random() * 5000 - 2000) + 2000;
+const SLIDE_INTERVAL = 5000;
 const MAX_SLIDE_COUNT = 20;
 
 const Slider = () => {
