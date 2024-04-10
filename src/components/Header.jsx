@@ -7,6 +7,7 @@ import HeaderItems from "./HeaderItems";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import UserLocalDB from "../utils/UserLocalDB";
+import logoImg from "../assets/LogoImg.png";
 const menu = [
   {
     name: "HOME",
@@ -47,13 +48,15 @@ const Header = () => {
 
   return (
     <div className=" flex items-center justify-between p-5">
-      <div className=" flex items-center gap-8 ">
-        {/* <img
-          src={logo}
-          className=" w-[40px] h-30 md:h-14 lg:h-10 md:w-[115px] object-cover"
-          alt=""
-        /> */}
-        <h2 className=" text-white pl-5">Movie_Store </h2>
+      <div className=" flex items-center gap-8">
+        <div className=" flex items-center">
+          <img
+            src={logoImg}
+            className=" w-[80px] h-30 md:h-14 lg:h-10 md:w-[115px] object-cover"
+            alt=""
+          />
+        </div>
+
         {/* Desktop Menu */}
         <div className=" hidden md:flex gap-8">
           {menu.map((item, index) => {
