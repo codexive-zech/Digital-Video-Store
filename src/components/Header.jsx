@@ -77,7 +77,7 @@ const Header = () => {
             );
           })}
         </div>
-        {/*End of Desktop Menu */}
+        {/*End of Desktop Menu  */}
         {/* Mobile Menu */}
         <div className="  flex md:hidden gap-5">
           {menu.map(
