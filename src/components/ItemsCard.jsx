@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
-
 const ItemsCard = ({ listing, title }) => {
   const { data, isLoading } = listing;
 
@@ -23,7 +21,7 @@ const ItemsCard = ({ listing, title }) => {
             </h2>
           )}
           <div className=" grid gap-6 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 ">
-            {data.map((item) => {
+            {data?.slice(0, 16).map((item) => {
               return (
                 <Link to={`/${item.id}`} key={item.id} className="relative">
                   <div className="relative">
