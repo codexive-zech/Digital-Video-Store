@@ -40,7 +40,7 @@ const SingleDetails = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <h1 className=" font-semibold text-center lg:text-left text-white ">
+                <h1 className=" font-semibold text-center text-sm md:text-base lg:text-left text-white ">
                   {data.name}
                 </h1>
 
