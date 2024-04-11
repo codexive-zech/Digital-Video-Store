@@ -40,7 +40,7 @@ const SingleDetails = () => {
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <h1 className=" font-semibold text-center lg:text-left ">
+                <h1 className=" font-semibold text-center lg:text-left text-white ">
                   {data.name}
                 </h1>
 
@@ -68,7 +68,7 @@ const SingleDetails = () => {
                   </div>
                 </div>
 
-                <p className=" font-medium pt-4 pb-12 text-xl leading-8">
+                <p className=" font-medium pt-4 pb-12 text-xl leading-8 text-white">
                   {data.synopsis}
                 </p>
 
