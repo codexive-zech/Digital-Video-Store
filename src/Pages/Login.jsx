@@ -5,6 +5,7 @@ import { AiTwotoneEye, AiTwotoneEyeInvisible } from "react-icons/ai";
 import FormInput from "../components/FormInput";
 import SubmitBtn from "../components/SubmitBtn";
 import useLogin from "../hooks/useLogin";
+import { HiHome } from "react-icons/hi2";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -14,7 +15,10 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
   return (
-    <section className=" grid lg:grid-cols-2 place-items-center m-0 ">
+    <section className=" grid lg:grid-cols-2 place-items-center m-0 relative">
+      <Link to={"/"} className=" absolute top-10 left-10 text-white">
+        <HiHome />
+      </Link>
       <form
         className="my-10 md:my-0 p-3 flex flex-col gap-y-4 w-[95vw] mx-auto md:w-9/12 "
         onSubmit={handleSubmit()}
